@@ -1,0 +1,60 @@
+/* Breadcrumb Container */
+.breadcrums {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+}
+
+.breadcrums img {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+}
+
+/* Breadcrumb Text */
+.breadcrums span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Active and Inactive Links */
+.breadcrums span {
+    font-weight: bold;
+    color: #666;
+}
+
+.breadcrums span:last-child {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Hover Effect for Links */
+.breadcrums span:not(:last-child):hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .breadcrums {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .breadcrums img {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .breadcrums {
+        font-size: 10px;
+        padding: 3px;
+    }
+    .breadcrums img {
+        width: 6px;
+        height: 6px;
+    }
+}

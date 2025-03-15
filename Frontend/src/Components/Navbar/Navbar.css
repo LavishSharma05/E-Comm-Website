@@ -3,6 +3,7 @@
     justify-content: space-around;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
+    align-items: center;
 }
 
 .nav-logo{
@@ -81,4 +82,39 @@
     color:white;
 }
 
+.nav-dropdown{
+    display: none;
+}
+
+@media(max-width:800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+
+    .nav-dropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+
+    .nav-menu{
+        display: none;
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        justify-content: center;
+        top: 50px;
+    }
+
+    .nav-menu-visible{
+        display: flex;
+        transition: 0.5s;
+    }
+
+    .nav-dropdown.open{
+        transform: rotate(90deg);
+    }
+}
 

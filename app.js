@@ -12,7 +12,7 @@ const { type } = require('os')
 app.use(express.json())
 app.use(cors())
 
-const MONGO_URI="mongodb+srv://lavishsharma182005:ghTgFH0OsHeYlD2I@ecommcluster1.2f8ro.mongodb.net/"
+const MONGO_URI="Your_MongoDb_key"
 
 mongoose
   .connect(MONGO_URI, {
